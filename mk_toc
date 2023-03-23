@@ -1,0 +1,85 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use feature 'say';
+
+say '<ol>';
+
+while (<DATA>) {
+  next unless /\s/;
+  my $len = length;
+  chomp;
+  if (/^\d+\.\s+/) {
+    s/^\d+\.\s+//;
+    say "  <li>$_\n    <ol>";
+
+    while (<DATA>) {
+      next unless /\s/;
+      $len = length;
+      chomp;
+      if (/^\d+\.\d+\.\s+/) {
+        s/^\d+\.\d+\.\s+//;
+        say "      <li>$_</li>";
+      } else {
+        say "    </ol>\n  </li>";
+        seek (DATA, tell() - $len, 0);
+        last;
+      }
+    }
+  } elsif (/^Appendix /) {
+    say "  <li>$_</li>";
+  }
+}
+
+say '</ol>'
+
+__DATA__
+1. Introduction
+1.1. What are GitHub Actions?
+1.2. Why use GitHub Actions?
+1.3. GitHub Actions vs. Other CI/CD Tools
+2. Getting Started with GitHub Actions
+2.1. Setting Up Your Repository
+2.2. Understanding YAML Syntax
+2.3. Anatomy of a GitHub Actions Workflow
+3. Building Your First Workflow
+3.1. Workflow Triggers: Events and Scheduling
+3.2. Defining Jobs and Steps
+3.3. Using Pre-Built Actions
+3.4. Running Shell Commands
+4. Managing Workflow Execution
+4.1. Environment Variables and Secrets
+4.2. Job and Step-Level Conditions
+4.3. Matrix Builds and Parallelization
+5. Creating Custom GitHub Actions
+5.1. Docker-based Actions vs. JavaScript-based Actions
+5.2. Building a Docker-based Action
+5.3. Building a JavaScript-based Action
+5.4. Versioning and Publishing Your Custom Action
+6. Leveraging the GitHub Actions Marketplace
+6.1. Discovering and Evaluating Actions
+6.2. Popular Actions for Common Tasks
+6.3. Integrating Third-Party Services
+7. Implementing Continuous Integration with GitHub Actions
+7.1. Automated Testing
+7.2. Code Quality and Linting
+7.3. Code Coverage and Reporting
+8. Implementing Continuous Deployment with GitHub Actions
+8.1. Deploying to Cloud Platforms
+8.2. Deploying to On-Premises Servers
+8.3. Deploying Static Websites and GitHub Pages
+9. Securing and Optimizing Your GitHub Actions Workflows
+9.1. Workflow Security Best Practices
+9.2. Caching and Artifact Management
+9.3. Performance Optimization Tips
+10. Advanced GitHub Actions Techniques
+10.1. Workflow Templates and Reusable Workflows
+10.2. Handling Workflow Dependencies
+10.3. Automating Project Management and Collaboration
+11. Conclusion
+11.1. Recap of Key Concepts
+11.2. Further Resources and Learning
+
+Appendix A: GitHub Actions YAML Reference
+Appendix B: List of Useful GitHub Actions and Integrations

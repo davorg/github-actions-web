@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GitHub Actions Essentials - Landing Page</title>
+    <style>
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li:before {
+    counter-increment: section;
+    content: counters(section, ".") ". ";
+}
+    </style>
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-5">
+      <h1>GitHub Actions Essentials</h1>
+      <p>Automate, Integrate, Deploy: Unlocking the Power of GitHub Actions</p>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img src="/img/book-cover.png" alt="GitHub Actions Essentials Book Cover" class="img-fluid">
+        </div>
+        <div class="col-md-7">
+          <h2>About the Book</h2>
+          <ul>
+            <li>Learn how to set up and customize your GitHub Actions workflows</li>
+            <li>Implement Continuous Integration and Continuous Deployment</li>
+            <li>Optimize performance and security of your actions</li>
+            <li>Discover advanced techniques and best practices</li>
+          </ul>
+          <h2>Get Your Copy Now</h2>
+          <p><a href="#" class="btn btn-primary">Buy Now</a></p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <section>
+            <h2>Book Summary</h2>
+            <p>"GitHub Actions Essentials" is your definitive guide to mastering the world of GitHub Actions, a powerful automation tool that simplifies your software development workflow. From setting up your first workflow to exploring advanced techniques and best practices, this comprehensive resource covers everything you need to know to streamline your development process. With practical examples and step-by-step instructions, you'll learn how to create custom actions, implement continuous integration and deployment, optimize workflow performance, and automate project management tasks. Whether you're a seasoned developer or just getting started with GitHub Actions, this book will empower you to unlock the full potential of automation in your projects, saving you time and improving your software quality.</p>
+          </section>
+          <hr>
+          <section>
+            <h2>Table of Contents</h2>
+<ol>
+  <li>Introduction
+    <ol>
+      <li>What are GitHub Actions?</li>
+      <li>Why use GitHub Actions?</li>
+      <li>GitHub Actions vs. Other CI/CD Tools</li>
+    </ol>
+  </li>
+  <li>Getting Started with GitHub Actions
+    <ol>
+      <li>Setting Up Your Repository</li>
+      <li>Understanding YAML Syntax</li>
+      <li>Anatomy of a GitHub Actions Workflow</li>
+    </ol>
+  </li>
+  <li>Building Your First Workflow
+    <ol>
+      <li>Workflow Triggers: Events and Scheduling</li>
+      <li>Defining Jobs and Steps</li>
+      <li>Using Pre-Built Actions</li>
+      <li>Running Shell Commands</li>
+    </ol>
+  </li>
+  <li>Managing Workflow Execution
+    <ol>
+      <li>Environment Variables and Secrets</li>
+      <li>Job and Step-Level Conditions</li>
+      <li>Matrix Builds and Parallelization</li>
+    </ol>
+  </li>
+  <li>Creating Custom GitHub Actions
+    <ol>
+      <li>Docker-based Actions vs. JavaScript-based Actions</li>
+      <li>Building a Docker-based Action</li>
+      <li>Building a JavaScript-based Action</li>
+      <li>Versioning and Publishing Your Custom Action</li>
+    </ol>
+  </li>
+  <li>Leveraging the GitHub Actions Marketplace
+    <ol>
+      <li>Discovering and Evaluating Actions</li>
+      <li>Popular Actions for Common Tasks</li>
+      <li>Integrating Third-Party Services</li>
+    </ol>
+  </li>
+  <li>Implementing Continuous Integration with GitHub Actions
+    <ol>
+      <li>Automated Testing</li>
+      <li>Code Quality and Linting</li>
+      <li>Code Coverage and Reporting</li>
+    </ol>
+  </li>
+  <li>Implementing Continuous Deployment with GitHub Actions
+    <ol>
+      <li>Deploying to Cloud Platforms</li>
+      <li>Deploying to On-Premises Servers</li>
+      <li>Deploying Static Websites and GitHub Pages</li>
+    </ol>
+  </li>
+  <li>Securing and Optimizing Your GitHub Actions Workflows
+    <ol>
+      <li>Workflow Security Best Practices</li>
+      <li>Caching and Artifact Management</li>
+      <li>Performance Optimization Tips</li>
+    </ol>
+  </li>
+  <li>Advanced GitHub Actions Techniques
+    <ol>
+      <li>Workflow Templates and Reusable Workflows</li>
+      <li>Handling Workflow Dependencies</li>
+      <li>Automating Project Management and Collaboration</li>
+    </ol>
+  </li>
+  <li>Conclusion
+    <ol>
+      <li>Recap of Key Concepts</li>
+      <li>Further Resources and Learning</li>
+    </ol>
+  </li>
+  <li>Appendix A: GitHub Actions YAML Reference</li>
+  <li>Appendix B: List of Useful GitHub Actions and Integrations</li>
+</ol>
+          </section>
+          <hr>
+          <section>
+            <h2>About the Author</h2>
+            <!-- Add the author bio here -->
+          </section>
+          <hr>
+          <section>
+            <h2>Testimonials</h2>
+            <!-- Add testimonials here -->
+          </section>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </main>
+
+    <footer class="bg-secondary text-white text-center py-3">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
