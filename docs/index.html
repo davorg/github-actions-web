@@ -6,12 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>GitHub Actions Essentials - Landing Page</title>
     <style>
-ol {
+ol.toc {
     counter-reset: section;
     list-style-type: none;
 }
 
-li:before {
+ol.toc li:before {
     counter-increment: section;
     content: counters(section, ".") ". ";
 }
@@ -53,88 +53,89 @@ li:before {
           <hr>
           <section>
             <h2>Table of Contents</h2>
-<ol>
-  <li>Introduction
-    <ol>
-      <li>What are GitHub Actions?</li>
-      <li>Why use GitHub Actions?</li>
-      <li>GitHub Actions vs. Other CI/CD Tools</li>
-    </ol>
-  </li>
-  <li>Getting Started with GitHub Actions
-    <ol>
-      <li>Setting Up Your Repository</li>
-      <li>Understanding YAML Syntax</li>
-      <li>Anatomy of a GitHub Actions Workflow</li>
-    </ol>
-  </li>
-  <li>Building Your First Workflow
-    <ol>
-      <li>Workflow Triggers: Events and Scheduling</li>
-      <li>Defining Jobs and Steps</li>
-      <li>Using Pre-Built Actions</li>
-      <li>Running Shell Commands</li>
-    </ol>
-  </li>
-  <li>Managing Workflow Execution
-    <ol>
-      <li>Environment Variables and Secrets</li>
-      <li>Job and Step-Level Conditions</li>
-      <li>Matrix Builds and Parallelization</li>
-    </ol>
-  </li>
-  <li>Creating Custom GitHub Actions
-    <ol>
-      <li>Docker-based Actions vs. JavaScript-based Actions</li>
-      <li>Building a Docker-based Action</li>
-      <li>Building a JavaScript-based Action</li>
-      <li>Versioning and Publishing Your Custom Action</li>
-    </ol>
-  </li>
-  <li>Leveraging the GitHub Actions Marketplace
-    <ol>
-      <li>Discovering and Evaluating Actions</li>
-      <li>Popular Actions for Common Tasks</li>
-      <li>Integrating Third-Party Services</li>
-    </ol>
-  </li>
-  <li>Implementing Continuous Integration with GitHub Actions
-    <ol>
-      <li>Automated Testing</li>
-      <li>Code Quality and Linting</li>
-      <li>Code Coverage and Reporting</li>
-    </ol>
-  </li>
-  <li>Implementing Continuous Deployment with GitHub Actions
-    <ol>
-      <li>Deploying to Cloud Platforms</li>
-      <li>Deploying to On-Premises Servers</li>
-      <li>Deploying Static Websites and GitHub Pages</li>
-    </ol>
-  </li>
-  <li>Securing and Optimizing Your GitHub Actions Workflows
-    <ol>
-      <li>Workflow Security Best Practices</li>
-      <li>Caching and Artifact Management</li>
-      <li>Performance Optimization Tips</li>
-    </ol>
-  </li>
-  <li>Advanced GitHub Actions Techniques
-    <ol>
-      <li>Workflow Templates and Reusable Workflows</li>
-      <li>Handling Workflow Dependencies</li>
-      <li>Automating Project Management and Collaboration</li>
-    </ol>
-  </li>
-  <li>Conclusion
-    <ol>
-      <li>Recap of Key Concepts</li>
-      <li>Further Resources and Learning</li>
-    </ol>
-  </li>
-  <li>Appendix A: GitHub Actions YAML Reference</li>
-  <li>Appendix B: List of Useful GitHub Actions and Integrations</li>
-</ol>
+            <ol class="toc">
+              <li>Introduction
+                <ol class="toc">
+                  <li>What are GitHub Actions?</li>
+                  <li>Why use GitHub Actions?</li>
+                  <li>GitHub Actions vs. Other CI/CD Tools</li>
+                </ol>
+              </li>
+              <li>Getting Started with GitHub Actions
+                <ol class="toc">
+                  <li>Setting Up Your Repository</li>
+                  <li>Understanding YAML Syntax</li>
+                  <li>Anatomy of a GitHub Actions Workflow</li>
+                </ol>
+              </li>
+              <li>Building Your First Workflow
+                <ol class="toc">
+                  <li>Workflow Triggers: Events and Scheduling</li>
+                  <li>Defining Jobs and Steps</li>
+                  <li>Using Pre-Built Actions</li>
+                  <li>Running Shell Commands</li>
+                </ol>
+              </li>
+              <li>Managing Workflow Execution
+                <ol class="toc">
+                  <li>Environment Variables and Secrets</li>
+                  <li>Job and Step-Level Conditions</li>
+                  <li>Matrix Builds and Parallelization</li>
+                </ol>
+              </li>
+              <li>Creating Custom GitHub Actions
+                <ol class="toc">
+                  <li>Docker-based Actions vs. JavaScript-based Actions</li>
+                  <li>Building a Docker-based Action</li>
+                  <li>Building a JavaScript-based Action</li>
+                  <li>Versioning and Publishing Your Custom Action</li>
+                </ol>
+              </li>
+              <li>Leveraging the GitHub Actions Marketplace
+                <ol class="toc">
+                  <li>Discovering and Evaluating Actions</li>
+                  <li>Popular Actions for Common Tasks</li>
+                  <li>Integrating Third-Party Services</li>
+                </ol>
+              </li>
+              <li>Implementing Continuous Integration with GitHub Actions
+                <ol class="toc">
+                  <li>Automated Testing</li>
+                  <li>Code Quality and Linting</li>
+                  <li>Code Coverage and Reporting</li>
+                </ol>
+              </li>
+              <li>Implementing Continuous Deployment with GitHub Actions
+                <ol class="toc">
+                  <li>Deploying to Cloud Platforms</li>
+                  <li>Deploying to On-Premises Servers</li>
+                  <li>Deploying Static Websites and GitHub Pages</li>
+                </ol>
+              </li>
+              <li>Securing and Optimizing Your GitHub Actions Workflows
+                <ol class="toc">
+                  <li>Workflow Security Best Practices</li>
+                  <li>Caching and Artifact Management</li>
+                  <li>Performance Optimization Tips</li>
+                </ol>
+              </li>
+              <li>Advanced GitHub Actions Techniques
+                <ol class="toc">
+                  <li>Workflow Templates and Reusable Workflows</li>
+                  <li>Handling Workflow Dependencies</li>
+                  <li>Automating Project Management and Collaboration</li>
+                </ol>
+              </li>
+              <li>Conclusion
+                <ol class="toc">
+                  <li>Recap of Key Concepts</li>
+                  <li>Further Resources and Learning</li>
+                </ol>
+              </li>
+              <li>Appendix A: GitHub Actions YAML Reference</li>
+              <li>Appendix B: List of Useful GitHub Actions and Integrations</li>
+            </ol>
+            
           </section>
           <hr>
           <section>

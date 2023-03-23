@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-say '<ol>';
+say '<ol class="toc">';
 
 while (<DATA>) {
   next unless /\s/;
@@ -12,7 +12,7 @@ while (<DATA>) {
   chomp;
   if (/^\d+\.\s+/) {
     s/^\d+\.\s+//;
-    say "  <li>$_\n    <ol>";
+    say qq[  <li>$_\n    <ol class="toc">];
 
     while (<DATA>) {
       next unless /\s/;
