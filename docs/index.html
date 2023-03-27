@@ -38,6 +38,10 @@ ol.toc li:before {
     counter-increment: section;
     content: counters(section, ".") ". ";
 }
+
+main {
+  padding-bottom: 50px;
+}
     </style>
 
     <script type="application/ld+json">
@@ -98,136 +102,165 @@ ol.toc li:before {
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <hr>
-          <section>
-            <h2>Book Summary</h2>
-            <p>"GitHub Actions Essentials" is your definitive guide to mastering the world of GitHub Actions,
-              a powerful automation tool that simplifies your software development workflow. From setting up
-              your first workflow to exploring advanced techniques and best practices, this comprehensive
-              resource covers everything you need to know to streamline your development process. With
-              practical examples and step-by-step instructions, you'll learn how to create custom actions,
-              implement continuous integration and deployment, optimize workflow performance, and automate
-              project management tasks. Whether you're a seasoned developer or just getting started with
-              GitHub Actions, this book will empower you to unlock the full potential of automation in your
-              projects, saving you time and improving your software quality.</p>
-          </section>
-          <hr>
-          <section>
-            <h2>Table of Contents</h2>
-            <ol class="toc">
-              <li>Introduction
-                <ol class="toc">
-                  <li>What are GitHub Actions?</li>
-                  <li>Why use GitHub Actions?</li>
-                  <li>GitHub Actions vs. Other CI/CD Tools</li>
-                </ol>
-              </li>
-              <li>Getting Started with GitHub Actions
-                <ol class="toc">
-                  <li>Setting Up Your Repository</li>
-                  <li>Understanding YAML Syntax</li>
-                  <li>Anatomy of a GitHub Actions Workflow</li>
-                </ol>
-              </li>
-              <li>Building Your First Workflow
-                <ol class="toc">
-                  <li>Workflow Triggers: Events and Scheduling</li>
-                  <li>Defining Jobs and Steps</li>
-                  <li>Using Pre-Built Actions</li>
-                  <li>Running Shell Commands</li>
-                </ol>
-              </li>
-              <li>Managing Workflow Execution
-                <ol class="toc">
-                  <li>Environment Variables and Secrets</li>
-                  <li>Job and Step-Level Conditions</li>
-                  <li>Matrix Builds and Parallelisation</li>
-                </ol>
-              </li>
-              <li>Creating Custom GitHub Actions
-                <ol class="toc">
-                  <li>Docker-based Actions vs. JavaScript-based Actions</li>
-                  <li>Building a Docker-based Action</li>
-                  <li>Building a JavaScript-based Action</li>
-                  <li>Versioning and Publishing Your Custom Action</li>
-                </ol>
-              </li>
-              <li>Leveraging the GitHub Actions Marketplace
-                <ol class="toc">
-                  <li>Discovering and Evaluating Actions</li>
-                  <li>Popular Actions for Common Tasks</li>
-                  <li>Integrating Third-Party Services</li>
-                </ol>
-              </li>
-              <li>Implementing Continuous Integration with GitHub Actions
-                <ol class="toc">
-                  <li>Automated Testing</li>
-                  <li>Code Quality and Linting</li>
-                  <li>Code Coverage and Reporting</li>
-                </ol>
-              </li>
-              <li>Implementing Continuous Deployment with GitHub Actions
-                <ol class="toc">
-                  <li>Deploying to Cloud Platforms</li>
-                  <li>Deploying to On-Premises Servers</li>
-                  <li>Deploying Static Websites and GitHub Pages</li>
-                </ol>
-              </li>
-              <li>Securing and Optimizing Your GitHub Actions Workflows
-                <ol class="toc">
-                  <li>Workflow Security Best Practices</li>
-                  <li>Caching and Artifact Management</li>
-                  <li>Performance Optimisation Tips</li>
-                </ol>
-              </li>
-              <li>Advanced GitHub Actions Techniques
-                <ol class="toc">
-                  <li>Workflow Templates and Reusable Workflows</li>
-                  <li>Handling Workflow Dependencies</li>
-                  <li>Automating Project Management and Collaboration</li>
-                </ol>
-              </li>
-              <li>Conclusion
-                <ol class="toc">
-                  <li>Recap of Key Concepts</li>
-                  <li>Further Resources and Learning</li>
-                </ol>
-              </li>
-              <li>Appendix A: GitHub Actions YAML Reference</li>
-              <li>Appendix B: List of Useful GitHub Actions and Integrations</li>
-            </ol>
-            
-          </section>
-          <hr>
-          <section>
-            <h2>About the Author</h2>
-            <p>Dave Cross is a freelance software engineer with a career in
-              the IT industry that spans more than three decades. Having
-              worked extensively with source code control throughout his
-              career, Dave is well-versed in the intricacies of the subject.
-              As an experienced Perl practitioner, he has authored several
-              books on the topic and is a regular speaker at tech conferences.</p>
-
-            <p>Since adopting git and GitHub in 2008, Dave has gained valuable
-              insights into these platforms, which he shares in "GitHub Actions
-              Essentials" to help readers make the most of the powerful
-              automation tool for their development workflows.</p>
-
-            <p>Outside of his tech-focused pursuits, Dave enjoys attending
-              live music events and delving into his family tree. Join him on
-              this journey as he guides you through mastering GitHub Actions
-              for a more streamlined software development experience.</p>
-          </section>
-          <!-- hr>
-          <section>
-            <h2>Testimonials</h2>
-            <!-- Add testimonials here -->
-          </section -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Book summary
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>"GitHub Actions Essentials" is your definitive guide to mastering the world of GitHub Actions,
+                      a powerful automation tool that simplifies your software development workflow. From setting up
+                      your first workflow to exploring advanced techniques and best practices, this comprehensive
+                      resource covers everything you need to know to streamline your development process. With
+                      practical examples and step-by-step instructions, you'll learn how to create custom actions,
+                      implement continuous integration and deployment, optimize workflow performance, and automate
+                      project management tasks. Whether you're a seasoned developer or just getting started with
+                      GitHub Actions, this book will empower you to unlock the full potential of automation in your
+                      projects, saving you time and improving your software quality.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Table of contents
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="toc">
+                    <li>Introduction
+                      <ol class="toc">
+                        <li>What are GitHub Actions?</li>
+                        <li>Why use GitHub Actions?</li>
+                        <li>GitHub Actions vs. Other CI/CD Tools</li>
+                      </ol>
+                    </li>
+                    <li>Getting Started with GitHub Actions
+                      <ol class="toc">
+                        <li>Setting Up Your Repository</li>
+                        <li>Understanding YAML Syntax</li>
+                        <li>Anatomy of a GitHub Actions Workflow</li>
+                      </ol>
+                    </li>
+                    <li>Building Your First Workflow
+                      <ol class="toc">
+                        <li>Workflow Triggers: Events and Scheduling</li>
+                        <li>Defining Jobs and Steps</li>
+                        <li>Using Pre-Built Actions</li>
+                        <li>Running Shell Commands</li>
+                      </ol>
+                    </li>
+                    <li>Managing Workflow Execution
+                      <ol class="toc">
+                        <li>Environment Variables and Secrets</li>
+                        <li>Job and Step-Level Conditions</li>
+                        <li>Matrix Builds and Parallelisation</li>
+                      </ol>
+                    </li>
+                    <li>Creating Custom GitHub Actions
+                      <ol class="toc">
+                        <li>Docker-based Actions vs. JavaScript-based Actions</li>
+                        <li>Building a Docker-based Action</li>
+                        <li>Building a JavaScript-based Action</li>
+                        <li>Versioning and Publishing Your Custom Action</li>
+                      </ol>
+                    </li>
+                    <li>Leveraging the GitHub Actions Marketplace
+                      <ol class="toc">
+                        <li>Discovering and Evaluating Actions</li>
+                        <li>Popular Actions for Common Tasks</li>
+                        <li>Integrating Third-Party Services</li>
+                      </ol>
+                    </li>
+                    <li>Implementing Continuous Integration with GitHub Actions
+                      <ol class="toc">
+                        <li>Automated Testing</li>
+                        <li>Code Quality and Linting</li>
+                        <li>Code Coverage and Reporting</li>
+                      </ol>
+                    </li>
+                    <li>Implementing Continuous Deployment with GitHub Actions
+                      <ol class="toc">
+                        <li>Deploying to Cloud Platforms</li>
+                        <li>Deploying to On-Premises Servers</li>
+                        <li>Deploying Static Websites and GitHub Pages</li>
+                      </ol>
+                    </li>
+                    <li>Securing and Optimizing Your GitHub Actions Workflows
+                      <ol class="toc">
+                        <li>Workflow Security Best Practices</li>
+                        <li>Caching and Artifact Management</li>
+                        <li>Performance Optimisation Tips</li>
+                      </ol>
+                    </li>
+                    <li>Advanced GitHub Actions Techniques
+                      <ol class="toc">
+                        <li>Workflow Templates and Reusable Workflows</li>
+                        <li>Handling Workflow Dependencies</li>
+                        <li>Automating Project Management and Collaboration</li>
+                      </ol>
+                    </li>
+                    <li>Conclusion
+                      <ol class="toc">
+                        <li>Recap of Key Concepts</li>
+                        <li>Further Resources and Learning</li>
+                      </ol>
+                    </li>
+                    <li>Appendix A: GitHub Actions YAML Reference</li>
+                    <li>Appendix B: List of Useful GitHub Actions and Integrations</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  About the author
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Dave Cross is a freelance software engineer with a career in
+                      the IT industry that spans more than three decades. Having
+                      worked extensively with source code control throughout his
+                      career, Dave is well-versed in the intricacies of the subject.
+                      As an experienced Perl practitioner, he has authored several
+                      books on the topic and is a regular speaker at tech conferences.</p>
+          
+                    <p>Since adopting git and GitHub in 2008, Dave has gained valuable
+                      insights into these platforms, which he shares in "GitHub Actions
+                      Essentials" to help readers make the most of the powerful
+                      automation tool for their development workflows.</p>
+          
+                    <p>Outside of his tech-focused pursuits, Dave enjoys attending
+                      live music events and delving into his family tree. Join him on
+                      this journey as he guides you through mastering GitHub Actions
+                      for a more streamlined software development experience.</p>
+                </div>
+              </div>
+            </div>
+            <!-- div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Testimonials
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                </div>
+              </div>
+            </div -->
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
     </main>
 
-    <footer class="bg-secondary text-white text-center py-3">
+    <footer class="bg-secondary text-white text-center py-3 fixed-bottom">
         <p>&copy; 2023 <a href="https://twitter.com/davorg" class="link-light">Dave Cross</a>. All rights reserved.</p>
     </footer>
 
