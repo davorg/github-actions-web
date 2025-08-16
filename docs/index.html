@@ -10,91 +10,26 @@
 
     gtag('config', 'G-WLLGCRP16F');
   </script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GitHub Actions Essentials — Automate, Integrate, Deploy</title>
-  <meta name="description" content="GitHub Actions Essentials: a practical guide to automating CI/CD with GitHub Actions. Learn workflows, CI, CD, security, optimisation, and advanced techniques." />
-  <link rel="canonical" href="https://actions.davecross.co.uk/" />
+  <meta name="description" content="GitHub Actions Essentials: a practical guide to automating CI/CD with GitHub Actions. Learn workflows, CI, CD, security, optimisation, and advanced techniques.">
+  <link rel="canonical" href="https://actions.davecross.co.uk/">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:site_name" content="GitHub Actions Essentials"/>
-  <meta property="og:title" content="GitHub Actions Essentials — Automate, Integrate, Deploy"/>
-  <meta property="og:description" content="Unlock the power of GitHub Actions. CI/CD, security, optimisation, and more."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://actions.davecross.co.uk/"/>
-  <meta property="og:image" content="https://actions.davecross.co.uk/images/og-1200x630.png"/>
-  <meta property="og:image:alt" content="Cover of GitHub Actions Essentials"/>
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="og:site_name" content="GitHub Actions Essentials">
+  <meta property="og:title" content="GitHub Actions Essentials — Automate, Integrate, Deploy">
+  <meta property="og:description" content="Unlock the power of GitHub Actions. CI/CD, security, optimisation, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://actions.davecross.co.uk/">
+  <meta property="og:image" content="https://actions.davecross.co.uk/images/og-1200x630.png">
+  <meta property="og:image:alt" content="Cover of GitHub Actions Essentials">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <style>
-    :root{
-      --bg: #0b1020;            /* deep navy */
-      --bg-2: #0f1530;          /* slightly lighter */
-      --ink: #eaf1ff;           /* off-white */
-      --muted: #9fb0d1;         /* soft steel */
-      --accent: #4cc2ff;        /* cyan */
-      --accent-2: #a78bfa;      /* purple */
-      --card: #0f1833;          /* card bg */
-      --border: rgba(255,255,255,.08);
-      --radius: 18px;
-      --shadow: 0 12px 40px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{
-      color: var(--ink);
-      background:
-        radial-gradient(1200px 600px at -10% -30%, #16254f 0%, transparent 60%),
-        radial-gradient(900px 500px at 120% 140%, #1a2b60 0%, transparent 60%),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      line-height: 1.7;
-    }
-    a{ color: var(--accent); text-decoration: none }
-    a:hover{ text-decoration: underline }
-
-    .shell{ max-width: 1080px; margin: 0 auto; padding: clamp(16px, 3vw, 28px) }
-
-    /* Hero */
-    header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap: clamp(18px, 3vw, 26px); align-items:center }
-    .eyebrow{ color: var(--muted); letter-spacing:.08em; text-transform: uppercase; font-weight:800; font-size:.8rem }
-    h1{ font-weight: 800; font-size: clamp(28px, 5vw, 48px); margin:.3rem 0 .5rem }
-    .tagline{ font-size: clamp(16px, 2.6vw, 22px); color:#d8e4ff; opacity:.95; margin:.2rem 0 1rem }
-    .cover{ width:100%; aspect-ratio: 2/3; object-fit: cover; border-radius: var(--radius); border:1px solid var(--border); box-shadow: var(--shadow) }
-
-    .cta-row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.5rem }
-    .btn{ display:inline-block; border:0; border-radius: 12px; padding:.9rem 1.2rem; font-weight:800; cursor:pointer; box-shadow: 0 8px 24px rgba(0,0,0,.35) }
-    .btn-primary{ background: linear-gradient(90deg, var(--accent), var(--accent-2)); color:#0a0f20 }
-    .btn-secondary{ background: #18224a; color:#e6eaff; border:1px solid var(--border) }
-
-    /* Sections */
-    section{ margin-top: clamp(18px, 3vw, 28px) }
-    .card{ background: var(--card); border:1px solid var(--border); border-radius: var(--radius); padding: clamp(14px,2.5vw,22px); box-shadow: var(--shadow) }
-    .section-title{ font-size: clamp(22px, 3.4vw, 32px); margin: 0 0 12px; font-weight:800 }
-    ul{ margin: .2rem 0 0 1.2rem }
-
-    /* TOC grid */
-    .toc{ display:grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .toc .block{ background:#111a3b; border:1px solid var(--border); border-radius: 14px; padding:12px }
-    .toc h3{ margin:.2rem 0 .5rem; font-size:1.05rem }
-    .toc ol{ margin:.2rem 0 0 1.1rem }
-
-    /* More stores */
-    details.more-stores{ margin-top:12px; background:#111a3b; border:1px solid var(--border); border-radius:14px; padding:10px }
-    details.more-stores summary{ cursor:pointer; font-weight:800 }
-    .store-grid{ display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-top:10px }
-    .store-grid a{ display:block; text-align:center; text-decoration:none; font-weight:700; padding:10px 12px; background:#0e1735; border-radius:12px; border:1px solid var(--border); color:#eaf1ff }
-
-    footer{ opacity:.7; font-size:.95rem; margin-top: 20px }
-
-    @media (max-width: 880px){
-      header.hero{ grid-template-columns: 1fr; }
-      .cover{ order:-1; max-width: 360px; justify-self:center }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <script type="application/ld+json">
@@ -312,16 +247,7 @@
 
   <!-- Your shared Amazon store helper (CDN) -->
   <script src="https://cdn.davecross.co.uk/js/amazon-store/v1/amazon-store.min.js" defer></script>
-  <script>
-    const AFFILIATE_TAG = "davblog-21";
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // Wire the main CTA and any other Amazon buttons
-      AmazonStore.enhanceAll({ tag: AFFILIATE_TAG });
-      AmazonStore.renderStoreGridAll({ tag: AFFILIATE_TAG });
-    });
-  </script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
 
